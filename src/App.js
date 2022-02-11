@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import Input from './Input';
-import removeE from './utils';
+import uppercaseE from './utils';
 
 // const App = () => {
 //     const [inputValue, setInputValue] = useState('North America');
@@ -8,11 +8,11 @@ import removeE from './utils';
 
 //     // useEffect(() => {
 //     //     console.log('on input value change');
-//     //     setResultInput(removeE(inputValue));
+//     //     setResultInput(uppercaseE(inputValue));
 //     // }, [inputValue]);
 
 //     const onChange = (value) => {
-//         const res = removeE(value);
+//         const res = uppercaseE(value);
 //         setInputValue(value);
 //         setResultInput(res);
 //     };
@@ -50,13 +50,13 @@ class App extends React.Component {
 
     componentDidUpdate(_prevProps, prevState) {
         if (this.state.inputValue !== prevState.inputValue) {
-            this.setState({resultInput: removeE(this.state.inputValue)});
+            this.setState({resultInput: uppercaseE(this.state.inputValue)});
             console.log('on input value change');
         }
     }
 
     onChange(value) {
-        // let res = removeE(value);
+        // let res = uppercaseE(value);
         // this.setState({inputValue: value, resultInput: res});
         this.setState({inputValue: value});
     }
