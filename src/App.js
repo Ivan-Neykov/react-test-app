@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import Input from './Input';
 import uppercaseE from './utils';
+import TinqinInput from '@tinqin/tinqin-ui-components/lib/input/';
 
 // const App = () => {
 //     const [inputValue, setInputValue] = useState('North America');
@@ -65,6 +66,11 @@ class App extends React.Component {
         return (
             <div>
                 <h1>Hello React</h1>
+                <TinqinInput
+                    label='tinqin input'
+                    value='some value'
+                    vertical={true}
+                />
                 <Input
                     label='Country name: '
                     placeholder='Put some string here'
