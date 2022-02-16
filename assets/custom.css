@@ -1,0 +1,19 @@
+.tq-highlight-panel{
+    background: #ffcdcd;
+    box-sizing: border-box;
+    border: 1px solid #ff9191;
+    text-align: center;
+}
+.tq-highlight-panel-no-margin{
+    margin: 0;
+}
+
+.tq-grid .tq-grid-a .tq-row {
+    letter-spacing: normal;
+    word-spacing: normal;
+}
+
+.tq-grid-a .tq-row > div {
+    background: darkcyan;
+    border: 1px solid white;
+}
